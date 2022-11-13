@@ -8,7 +8,6 @@ import com.Jump2Digital.HackathonBackend.model.SizeCount;
 import java.util.List;
 
 public interface CompaniesService {
-    List<Companies> getAll();
 
     List<Companies> getAllOrderByFoundedDesc();
 

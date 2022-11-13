@@ -21,11 +21,6 @@ public class CompaniesController {
     @Autowired
     private CompaniesService companiesService;
 
-    @GetMapping("/")
-    public List<Companies> getAllCompanies() {
-        return companiesService.getAll();
-    }
-
     @GetMapping("/founded")
     public List<Companies> listAllOrderByFoundedDesc() {
         return companiesService.getAllOrderByFoundedDesc();
